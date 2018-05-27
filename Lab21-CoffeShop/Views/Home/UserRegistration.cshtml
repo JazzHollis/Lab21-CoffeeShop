@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "UserRegistration";
+}
+<br />
+<h4>@ViewBag.Message</h4>
+<br />
+<form action="/Home/AddNewUser" method="post">
+    First Name:<input type="text" name="Firstname" required /><br /><br />
+    Last Name:<input type="text" name="Lastname" required /><br /><br />
+    Email:<input type="email" name="Email" required placeholder="example@yahoo.com" /><br /><br />
+    Phone Number:<input type="tel" name="Phone" required placeholder="313-444-3333" /><br /><br />
+    Password:<input type="password" name="Password" required /><br /><br />
+    <input type="submit" value="Register" />
+</form>
+
