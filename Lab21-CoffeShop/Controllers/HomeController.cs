@@ -6,12 +6,15 @@ using System.Web.Mvc;
 using Lab21_CoffeShop.Models;
 
 
+
 namespace Lab21_CoffeShop.Controllers
 {
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+            CoffeeShopDBEntities2 ORM = new CoffeeShopDBEntities2();
+            ViewBag.ItemList = ORM.Items.ToList();
             return View();
         }
 
@@ -35,13 +38,19 @@ namespace Lab21_CoffeShop.Controllers
             return View();
         }
 
-        public ActionResult AddNewUser(UserInfo newUser)
+        public ActionResult AddNewUser(User newUser)
         {
+
+         
 
             if (ModelState.IsValid)
             {
+                CoffeeShopDBEntities2 ORM = new CoffeeShopDBEntities2();
+                ORM.Users.Add(newUser);
+                ORM.SaveChanges();
 
-                ViewBag.Message = $"Welcome {newUser.Firstname}!";
+                ViewBag.Message = $"Welcome {newUser.First_Name}!";
+
                 return View("Confirm");
             }
 
@@ -49,6 +58,8 @@ namespace Lab21_CoffeShop.Controllers
             {  
                 return View("Error");
             }
+
+  
         }
     }
 }
