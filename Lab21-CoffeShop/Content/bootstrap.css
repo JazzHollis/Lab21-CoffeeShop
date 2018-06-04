@@ -52,7 +52,7 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifsans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -267,7 +267,7 @@ table {
   p,
   h2,
   h3 {
-    orphans: 3;
+    orphans:3;
     widows: 3;
   }
   h2,
@@ -311,7 +311,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -720,7 +720,7 @@ code {
   font-size: 90%;
   color: #c7254e;
   white-space: nowrap;
-  background-color: #f9f2f4;
+  background-color: brown;
   border-radius: 4px;
 }
 
@@ -761,6 +761,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+ 
 }
 
 .container:before,

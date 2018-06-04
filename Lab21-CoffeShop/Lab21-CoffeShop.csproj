@@ -184,6 +184,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\Coffee-1.png" />
+    <Content Include="images\Coffee-2.jpg" />
+    <Content Include="images\Coffee-3.jpg" />
     <Content Include="Models\CoffeeShopDB.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>CoffeeShopDB.edmx</DependentUpon>
@@ -237,6 +240,12 @@
     <Content Include="Views\Error.cshtml" />
     <Content Include="Views\Home\Error.cshtml" />
     <Content Include="Views\Home\Confirm.cshtml" />
+    <Content Include="Views\Home\Admin.cshtml" />
+    <Content Include="Views\Home\AddNewItem.cshtml" />
+    <Content Include="Views\Home\EditItem.cshtml" />
+    <Content Include="Views\Home\AddItem.cshtml" />
+    <Content Include="Views\Home\ItemUpdates.cshtml" />
+    <Content Include="Views\Home\DeleteItem.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

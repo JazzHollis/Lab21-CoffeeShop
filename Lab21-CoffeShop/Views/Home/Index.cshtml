@@ -1,27 +1,27 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Index";
 }
 
 <h1>Welcome to GC Coffee Shop!</h1>
 <h5><a href="/Home/UserRegistration">Join Our Registry!</a></h5>
 
-<h1>Menu</h1>
+<h1>Menu</h1><br />
 
 <div class="panel-collapse">
     <div class="panel-primary">
 
-        
 
-      @foreach (var c in ViewBag.ItemList)
+        @foreach (var c in ViewBag.ItemList)
     {
-        <div class="col-md-3 col-xs-3">
-            
-            
+        <div class="col-md-3 col-xs-3 col-lg-3">
+            <img src="~/images/Coffee-3.jpg" alt="Grand Circus Coffee">
+
             <h4>@c.Name</h4>
             <h5>@c.Description</h5>
             <h6>Qty. @c.Quantity</h6>
-            <h6>Price: @c.Price</h6>
+            <h6>Price: @c.Price</h6><br /><br />
         </div>
 }
+
     </div>
 </div>
