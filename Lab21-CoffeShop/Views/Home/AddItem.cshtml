@@ -3,6 +3,13 @@
     ViewBag.Title = "AddItem";
 }
 
+<form action="/Home/AddNewItem" method="post">
+    Name<input type="text"  name="Name" /><br />
+    Descrption<input type="text" name="Description" /><br />
+    Quantity <input type="number"  name="Quantity" /><br />
+    Price <input type="number" name="Price" /><br />
+    <input type="submit" value="Save" />
+</form>
 
 
 

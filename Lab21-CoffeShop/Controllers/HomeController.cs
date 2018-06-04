@@ -81,12 +81,10 @@ namespace Lab21_CoffeShop.Controllers
             {
                 CoffeeShopDBEntities2 ORM = new CoffeeShopDBEntities2();
                 ORM.Items.Add(newItem);
-               
-
-                ViewBag.ItemList = ORM.Items.ToList();
+              
                 ORM.SaveChanges();
 
-                return View();
+                return RedirectToAction("Admin");
             }
 
             else
@@ -128,7 +126,7 @@ namespace Lab21_CoffeShop.Controllers
             {
                 ViewBag.Item = Found;
 
-                return View();
+                return View(Found);
 
             }
             else

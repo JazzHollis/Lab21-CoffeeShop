@@ -11,38 +11,13 @@ namespace Lab21_CoffeShop.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class User
     {
-        [Required]
         public string First_Name { get; set; }
-
-        [Required]
         public string Last_Name { get; set; }
-
-        [Required]
-        [RegularExpression(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$", ErrorMessage = "Enter a valid email")]
         public string Email { get; set; }
-
-        [Required]
         public string Phone_Number { get; set; }
-
-        [Required]
         public string Password { get; set; }
-
-        public User()
-        {
-
-       }
-
-        public User(string firstname, string lastname, string email, string phone, string password)
-        {
-            First_Name = firstname;
-            Last_Name = lastname;
-            Email = email;
-            Phone_Number = phone;
-            Password = password;
-        }
     }
 }
